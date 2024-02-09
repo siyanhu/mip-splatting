@@ -67,12 +67,20 @@ class ModelParams(ParamGroup):
         g.source_path = os.path.abspath(g.source_path)
         return g
 
+
 class PipelineParams(ParamGroup):
     def __init__(self, parser):
         self.convert_SHs_python = False
         self.compute_cov3D_python = False
         self.debug = False
         super().__init__(parser, "Pipeline Parameters")
+
+
+class VirtualPaipelineParams2():
+    convert_SHs_python = False
+    compute_cov3D_python = False
+    debug = False
+
 
 class OptimizationParams(ParamGroup):
     def __init__(self, parser):

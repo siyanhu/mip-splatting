@@ -5,7 +5,8 @@ from concurrent.futures import ThreadPoolExecutor
 import queue
 import time
 
-scenes = ["ship", "drums", "ficus", "hotdog", "lego", "materials", "mic", "chair"]
+# scenes = ["ship", "drums", "ficus", "hotdog", "lego", "materials", "mic", "chair"]
+scenes = ["lego"]
 factors = [1] * len(scenes)
 
 output_dir = "benchmark_nerf_synthetic_ours_mtmt"
